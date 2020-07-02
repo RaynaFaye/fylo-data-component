@@ -28,14 +28,20 @@
         </ul>
       </div>
     </header>
-    <section>
-      <div>
-        <p>You’ve used 815 GB of your storage</p>
-        <div class="storage__slider"></div>
-        <p>0 GB</p>
-        <p>1000 GB</p>
+    <section class="storage">
+      <div class="storage__info">
+        <p>You’ve used <span class="bold">815 GB</span> of your storage</p>
+        <div class="storage__slider">
+          <div class="storage__slider__full">
+            <div class="storage__slider__ball"></div>
+          </div>
+        </div>
+        <div class="storage__slider-range bold">
+          <p>0 GB</p>
+          <p>1000 GB</p>
+        </div>
       </div>
-      <p>185 GB Left</p>
+      <p class="storage__left bold">185 <span class="storage__grey-color">GB Left</span></p>
     </section>
     <footer class="footer">
       <p class="attribution">
