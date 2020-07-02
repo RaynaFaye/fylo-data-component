@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
 
 body {
-  background: url(../images/bg-mobile.png);
+  background: no-repeat url(../images/bg-mobile.png);
+  background-size: cover;
   color: hsl(243, 100%, 93%);
   font-family: 'Raleway', sans-serif;
   font-size: 14px;
   margin: 0 25px;
+  height: 100vh;
 }
 .bold {
   font-weight: 700;
@@ -105,4 +107,46 @@ body {
 }
 .attribution a {
   color: #ffffff;
+}
+
+/* Media Queries */
+@media all and (min-width: 728px) {
+  body {
+    background: hsl(229, 57%, 11%) url(../images/bg-desktop.png) bottom no-repeat;
+    background-size: 100% 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 0px 5%;
+  }
+  /* Header */
+  .header {
+    margin: 0 25px 0 0;
+    flex-grow: 1;
+  }
+  /* Data Section */
+  .storage {
+    flex-grow: 2;
+  }
+  .storage__info {
+    text-align: left;
+    padding: 25px 40px;
+  }
+  .storage__left {
+    border: 2px solid hsl(229, 57%, 11%);
+    bottom: auto;
+    left: auto;
+    top: -40px;
+    right: 40px;
+  }
+}
+@media all and (min-width: 992px) {
+  .container {
+    padding: 0px 15%;
+  }
 }
